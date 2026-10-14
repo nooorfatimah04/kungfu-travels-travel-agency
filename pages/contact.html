@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | KungFu Travels</title>
+    <link rel="stylesheet" href="../styles/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+       <header class="site-header">
+        <div class="container">
+            <p class="site-name">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="KungFu Travels logo" class="site-logo">
+                    KungFu Travels
+                </a>
+            </p>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-dropdown">
+                    <a href="destinations.html">Destinations</a>
+                    <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Show destinations menu">&#9662;</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="destination-details.html">Hunza Valley</a></li>
+                        <li><a href="murree-hills.html">Murree Hills</a></li>
+                        <li><a href="naran.html">Naran</a></li>
+                    </ul>
+                </div>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </nav>
+            <nav class="account-nav" aria-label="Account navigation">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1>Contact KungFu Travels</h1>
+        <p>Ask about a destination, booking, or pricing.</p>
+
+        <section aria-labelledby="contact-details-title">
+            <h2 id="contact-details-title">Contact details</h2>
+            <address>
+                <p>Email: <a href="mailto:info@kungfutravels.com">info@kungfutravels.com</a></p>
+                <p>Telephone: <a href="tel:+923001234567">0300-1234567</a></p>
+                <p>Building no.12, Satellite Town, Sargodha.</p>
+            </address>
+            <p><strong>Office hours:</strong> Monday to Saturday, 9:00 AM to 6:00 PM.</p>
+        </section>
+
+        <section aria-labelledby="inquiry-title">
+            <h2 id="inquiry-title">Send an inquiry</h2>
+            <p>Fields marked as required must be completed.</p>
+            <form class="form-card" action="#" method="post">
+                <fieldset>
+                    <legend>Your details</legend>
+                    <p>
+                        <label for="contact-name">Full name</label>
+                        <input type="text" id="contact-name" name="fullName"
+                               autocomplete="name" minlength="3" required>
+                    </p>
+                    <p>
+                        <label for="contact-email">Email address</label>
+                        <input type="email" id="contact-email" name="email"
+                               autocomplete="email" required>
+                    </p>
+                    <p>
+                        <label for="contact-phone">Telephone number</label>
+                        <input type="tel" id="contact-phone" name="phone"
+                               autocomplete="tel">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Your inquiry</legend>
+                    <p>
+                        <label for="inquiry-topic">Topic</label>
+                        <select id="inquiry-topic" name="topic" required>
+                            <option value="">Select a topic</option>
+                            <option value="destinations">Destinations</option>
+                            <option value="booking">Booking</option>
+                            <option value="pricing">Pricing and Payment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="inquiry-message">Message</label>
+                        <textarea id="inquiry-message" name="message"
+                                  minlength="20" maxlength="1000" required></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferred reply method</legend>
+                    <div class="choice-row">
+                        <input type="radio" id="reply-email" name="replyMethod"
+                               value="email" checked>
+                        <label for="reply-email">Email</label>
+                    </div>
+                    <div class="choice-row">
+                        <input type="radio" id="reply-phone" name="replyMethod"
+                               value="phone">
+                        <label for="reply-phone">Telephone</label>
+                    </div>
+                </fieldset>
+                <p>
+                    <input type="checkbox" id="contact-consent" name="consent" required>
+                    <label for="contact-consent">I agree that KungFu Travels may use these details to reply.</label>
+                </p>
+                <button type="submit">Send Inquiry</button>
+                
+            </form>
+        </section>
+    </main>
+
+       <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2 class="footer-title">Contact us</h2>
+                <ul>
+                    <li><a href="mailto:info@kungfutravels.com">&#9993; info@kungfutravels.com</a></li>
+                    <li><a href="tel:+923123456780">&#9742; +92 312 3456780</a></li>
+                    <li><span>&#128339; Mon to Sat, 9:00 AM to 6:00 PM</span></li>
+                </ul>
+            </div>
+            <p class="footer-bottom">Fictional coursework website. Built by Noor Fatimah.</p>
+        </div>
+    </footer>
+      <script src="../js/dropdown.js"></script>
+      <script src="../js/contact.js"></script>
+</body>
+</html>

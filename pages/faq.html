@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | KungFu Travels</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-name">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="KungFu Travels logo" class="site-logo">
+                    KungFu Travels
+                </a>
+            </p>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-dropdown">
+                    <a href="destinations.html">Destinations</a>
+                    <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Show destinations menu">&#9662;</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="destination-details.html">Hunza Valley</a></li>
+                        <li><a href="murree-hills.html">Murree Hills</a></li>
+                        <li><a href="naran.html">Naran</a></li>
+                    </ul>
+                </div>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="account-nav" aria-label="Account navigation">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> / <a href="booking.html">Booking</a> / FAQs
+    </nav>
+
+    <main class="container page-content">
+        <h1>FAQs</h1>
+        <p>Quick answers about booking, prices and travel. Tap a question to open it.</p>
+
+        <section class="faq-group" id="faq-booking" aria-labelledby="faq-booking-title">
+            <h2 id="faq-booking-title">Booking</h2>
+
+            <details name="faq">
+                <summary>How do I book a tour?</summary>
+                <div class="faq-answer">
+                    <p>Pick a destination and package, then contact our booking team by email, phone or the contact form. You can follow every step on the <a href="booking-process.html">booking process</a> page.</p>
+                </div>
+            </details>
+
+            <details name="faq">
+                <summary>Can I change my destination?</summary>
+                <div class="faq-answer">
+                    <p>Yes. Contact us as early as possible to request a change. The change depends on availability, and the price may change if you move to a different package.</p>
+                </div>
+            </details>
+
+        </section>
+
+        <section class="faq-group" id="faq-prices" aria-labelledby="faq-prices-title">
+            <h2 id="faq-prices-title">Prices and payment</h2>
+
+            <details name="faq">
+                <summary>How do I pay?</summary>
+                <div class="faq-answer">
+                    <p>You can pay with JazzCash or EasyPaisa. Pay 30% as an advance to confirm your booking, and the remaining balance at least 7 days before travel. Payment details are on the <a href="booking.html#payment-title">booking page</a>.</p>
+                </div>
+            </details>
+
+            <details name="faq">
+                <summary>Can I get a refund if I cancel?</summary>
+                <div class="faq-answer">
+                    <p>Yes. Cancel 15 days or more before travel for an 80% refund, 7 to 14 days before for 50%, and less than 7 days before for 25%.</p>
+                </div>
+            </details>
+
+        </section>
+
+        <section class="faq-group" id="faq-travel" aria-labelledby="faq-travel-title">
+            <h2 id="faq-travel-title">Travel</h2>
+
+            <details name="faq">
+                <summary>What is not included?</summary>
+                <div class="faq-answer">
+                    <p>Entry tickets, lunch and personal expenses are not included. Peak season may add 10 to 15% to the price.</p>
+                </div>
+            </details>
+
+            <details name="faq">
+                <summary>How can I ask another question?</summary>
+                <div class="faq-answer">
+                    <p>Use the <a href="contact.html">contact page</a>, email us at <a href="mailto:info@kungfutravels.com">info@kungfutravels.com</a> or call <a href="tel:+923123456780">+92 312 3456780</a>. We reply Monday to Saturday, 9:00 AM to 6:00 PM.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="faq-help" aria-labelledby="faq-help-title">
+            <h2 id="faq-help-title">Still have a question?</h2>
+            <p>Our team is happy to help you plan your trip.</p>
+            <a class="button-link" href="contact.html">Contact our team</a>
+            <a class="button-link" href="pricing-payment.html">View pricing</a>
+        </section>
+
+        <p><a href="booking.html">Return to Booking</a></p>
+    </main>
+
+        <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2 class="footer-title">Contact us</h2>
+                <ul>
+                    <li><a href="mailto:info@kungfutravels.com">&#9993; info@kungfutravels.com</a></li>
+                    <li><a href="tel:+923123456780">&#9742; +92 312 3456780</a></li>
+                    <li><span>&#128339; Mon to Sat, 9:00 AM to 6:00 PM</span></li>
+                </ul>
+            </div>
+            <p class="footer-bottom">Fictional coursework website. Built by Noor Fatimah.</p>
+        </div>
+    </footer>
+    <script src="../js/dropdown.js"></script>
+</body>
+</html>

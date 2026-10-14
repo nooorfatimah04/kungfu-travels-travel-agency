@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KungFu Travels | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-name">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="KungFu Travels logo" class="site-logo">
+                    KungFu Travels
+                </a>
+            </p>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="pages/about.html">About</a>
+                <div class="nav-dropdown">
+                    <a href="pages/destinations.html">Destinations</a>
+                    <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Show destinations menu">&#9662;</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/destination-details.html">Hunza Valley</a></li>
+                        <li><a href="pages/murree-hills.html">Murree Hills</a></li>
+                        <li><a href="pages/naran.html">Naran</a></li>
+                    </ul>
+                </div>
+                <a href="pages/booking.html">Booking</a>
+                <a href="pages/contact.html">Contact</a>
+            </nav>
+            <nav class="account-nav" aria-label="Account navigation">
+                <a href="pages/login.html">Login</a>
+                <a href="pages/register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+       <section class="hero-banner" aria-labelledby="welcome-title">
+    <h1 id="welcome-title" class="welcome">Welcome to KungFu Travels</h1>
+    <p class="welcome-text">Hunza's mountains, Murree's pine forests and Naran's lakes, all planned around your time and budget.</p>
+    <div class="hero-actions">
+        <a class="btn" href="pages/destinations.html">Explore Destinations</a>
+        <a class="btn btn-outline" href="pages/packages.html">View Packages</a>
+    </div>
+    <ul class="hero-highlights">
+        <li><strong>3</strong> Top destinations</li>
+        <li><strong>Packages</strong> For every budget</li>
+        <li><strong>Easy</strong> Online booking</li>
+    </ul>
+</section>
+
+       
+       <section class="featured" aria-labelledby="featured-title">
+    <h2 id="featured-title">Featured Destination</h2>
+    <article>
+        <h3>Hunza Valley</h3>
+        <div class="photo-gallery">
+            <img src="images/hunza-view.jpg" alt="Karakoram Highway leading toward Hunza Valley peaks">
+            <img src="images/hunza-2.jpg" alt="Hunza Valley landscape view">
+            <img src="images/hunza-3.jpg" alt="Hunza Valley orchards and mountains">
+        </div>
+        <p>A beautiful valley in Pakistan famous for its mountains and orchards.</p>
+        <a class="btn" href="pages/destination-details.html">Explore Hunza Valley</a>
+    </article>
+</section>
+
+        <section class="journey" aria-labelledby="start-title">
+            <h2 id="start-title">Start your journey</h2>
+            <ul class="journey-links">
+                <li><a class="btn" href="pages/about.html">Learn about our agency</a></li>
+                <li><a class="btn" href="pages/destinations.html">Browse destinations</a></li>
+                <li><a class="btn" href="pages/booking.html">Review booking</a></li>
+                <li><a class="btn" href="pages/contact.html">Contact our team</a></li>
+            </ul>
+        </section>
+    </main>
+
+           <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2 class="footer-title">Contact us</h2>
+                <ul>
+                    <li><a href="mailto:info@kungfutravels.com">&#9993; info@kungfutravels.com</a></li>
+                    <li><a href="tel:+923123456780">&#9742; +92 312 3456780</a></li>
+                    <li><span>&#128339; Mon to Sat, 9:00 AM to 6:00 PM</span></li>
+                </ul>
+            </div>
+            <p class="footer-bottom">Fictional coursework website. Built by Noor Fatimah.</p>
+        </div>
+    </footer>
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>

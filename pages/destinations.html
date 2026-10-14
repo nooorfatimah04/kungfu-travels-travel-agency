@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | KungFu Travels</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-name">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="KungFu Travels logo" class="site-logo">
+                    KungFu Travels
+                </a>
+            </p>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-dropdown">
+                    <a href="destinations.html" aria-current="page">Destinations</a>
+                    <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Show destinations menu">&#9662;</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="destination-details.html">Hunza Valley</a></li>
+                        <li><a href="murree-hills.html">Murree Hills</a></li>
+                        <li><a href="naran.html">Naran</a></li>
+                    </ul>
+                </div>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="account-nav" aria-label="Account navigation">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1>Our Destinations</h1>
+        <p>Choose a destination that matches your travel goals.</p>
+        <section aria-labelledby="destination-list-title">
+            <h2 id="destination-list-title">Popular destinations</h2>
+            <article>
+                <h3>Hunza Valley</h3>
+                <img src="../images/hunza-view.jpg" alt="Karakoram Highway leading toward Hunza Valley" class="destination-list-photo">
+                <p>Famous for its mountains and orchards.</p>
+                <a class="btn" href="destination-details.html">View Hunza Valley</a>
+            </article>
+            <article>
+                <h3>Murree Hills</h3>
+                <img src="../images/murree-view.jpg" alt="Misty forested hills of Murree" class="destination-list-photo">
+                <p>A cool, easy getaway close to Islamabad.</p>
+                <a class="btn" href="murree-hills.html">View Murree Hills</a>
+            </article>
+            <article>
+                <h3>Naran</h3>
+                <img src="../images/naran-view.jpg" alt="Naran valley with mountains" class="destination-list-photo">
+                <p>Home to Saif-ul-Malook Lake and scenic valleys.</p>
+                <a class="btn" href="naran.html">View Naran</a>
+            </article>
+            <p><a href="packages.html">View all packages</a></p>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2 class="footer-title">Contact us</h2>
+                <ul>
+                    <li><a href="mailto:info@kungfutravels.com">&#9993; info@kungfutravels.com</a></li>
+                    <li><a href="tel:+923123456780">&#9742; +92 312 3456780</a></li>
+                    <li><span>&#128339; Mon to Sat, 9:00 AM to 6:00 PM</span></li>
+                </ul>
+            </div>
+            <p class="footer-bottom">Fictional coursework website. Built by Noor Fatimah.</p>
+        </div>
+    </footer>
+    <script src="../js/dropdown.js"></script>
+</body>
+</html>

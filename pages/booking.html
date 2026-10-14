@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | KungFu Travels</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-name">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="KungFu Travels logo" class="site-logo">
+                    KungFu Travels
+                </a>
+            </p>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-dropdown">
+                    <a href="destinations.html">Destinations</a>
+                    <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Show destinations menu">&#9662;</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="destination-details.html">Hunza Valley</a></li>
+                        <li><a href="murree-hills.html">Murree Hills</a></li>
+                        <li><a href="naran.html">Naran</a></li>
+                    </ul>
+                </div>
+                <a href="booking.html" aria-current="page">Booking</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="account-nav" aria-label="Account navigation">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-content">
+        <h1>Booking</h1>
+        <p>Follow the steps below to book your trip with KungFu Travels.</p>
+
+        <section aria-labelledby="booking-links-title">
+            <h2 id="booking-links-title">Booking information</h2>
+            <ul class="info-cards link-cards">
+                <li><a href="booking-process.html">Booking process</a></li>
+                <li><a href="pricing-payment.html">Pricing and payment</a></li>
+                <li><a href="faq.html">Frequently asked questions</a></li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="payment-title">
+            <h2 id="payment-title">Payment options</h2>
+            <p>Pay securely using your preferred mobile wallet.</p>
+            <form id="payment-form" action="#" method="post">
+                <fieldset class="payment-fieldset">
+                    <legend>Select your payment method</legend>
+
+                    <label class="payment-option jazzcash" for="pay-jazzcash">
+                        <input type="radio" id="pay-jazzcash" name="payment" value="jazzcash" required>
+                        <span class="payment-name">JazzCash</span>
+                        <span>Account title: KungFu Travels</span>
+                        <span>Mobile account: 0312 3456780</span>
+                        <span class="form-note">Send the payment and keep the transaction ID for confirmation.</span>
+                    </label>
+
+                    <label class="payment-option easypaisa" for="pay-easypaisa">
+                        <input type="radio" id="pay-easypaisa" name="payment" value="easypaisa">
+                        <span class="payment-name">EasyPaisa</span>
+                        <span>Account title: KungFu Travels</span>
+                        <span>Mobile account: 0312 3456780</span>
+                        <span class="form-note">Send the payment and keep the transaction ID for confirmation.</span>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="payment-actions" aria-label="Confirm payment and help">
+            <button type="submit" form="payment-form">Confirm payment method</button>
+            <p id="payment-message" class="payment-message" hidden></p>
+            <a class="button-link" href="register.html">Create an account to start booking</a>
+            <a href="contact.html">Contact us if you need help</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2 class="footer-title">Contact us</h2>
+                <ul>
+                    <li><a href="mailto:info@kungfutravels.com">&#9993; info@kungfutravels.com</a></li>
+                    <li><a href="tel:+923123456780">&#9742; +92 312 3456780</a></li>
+                    <li><span>&#128339; Mon to Sat, 9:00 AM to 6:00 PM</span></li>
+                </ul>
+            </div>
+            <p class="footer-bottom">Fictional coursework website. Built by Noor Fatimah.</p>
+        </div>
+    </footer>
+
+    <script src="../js/dropdown.js"></script>
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            var chosen = document.querySelector('input[name="payment"]:checked');
+            var message = document.getElementById('payment-message');
+            var name = chosen.value === 'jazzcash' ? 'JazzCash' : 'EasyPaisa';
+
+            message.innerHTML =
+                '<strong>&#10004; ' + name + ' selected.</strong><br>' +
+                'Please send your payment to 0312 3456780 (KungFu Travels) and keep the transaction ID. ' +
+                '<a href="contact.html">Send us your transaction ID</a>';
+
+            message.hidden = false;
+            message.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+</body>
+</html>

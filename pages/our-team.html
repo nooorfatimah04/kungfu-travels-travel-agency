@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | KungFu Travels</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-name">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="KungFu Travels logo" class="site-logo">
+                    KungFu Travels
+                </a>
+            </p>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="about.html" aria-current="page">About</a>
+                <div class="nav-dropdown">
+                    <a href="destinations.html">Destinations</a>
+                    <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Show destinations menu">&#9662;</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="destination-details.html">Hunza Valley</a></li>
+                        <li><a href="murree-hills.html">Murree Hills</a></li>
+                        <li><a href="naran.html">Naran</a></li>
+                    </ul>
+                </div>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="account-nav" aria-label="Account navigation">
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> /
+        <a href="about.html">About</a> /
+        Our Team
+    </nav>
+
+    <main class="container page-content">
+        <section class="team-banner" aria-labelledby="team-title">
+            <h1 id="team-title">Our Team</h1>
+            <p>Our travel agents help you plan every step of your trip.</p>
+        </section>
+
+        <section class="team-section" aria-labelledby="meet-title">
+            <h2 id="meet-title">Meet the team</h2>
+            <div class="team-grid">
+                <div class="team-card owner">
+                    <span class="avatar" aria-hidden="true">NF</span>
+                    <h3>Noor Fatimah</h3>
+                    <span class="team-role">Founder and Owner</span>
+                    <p>Founder and owner of KungFu Travels. Leads the agency and makes sure every trip is planned with care.</p>
+                </div>
+                <div class="team-card">
+                    <span class="avatar" aria-hidden="true">AK</span>
+                    <h3>Ayesha Khan</h3>
+                    <span class="team-role">Senior Travel Consultant</span>
+                    <p>Senior travel consultant, specializes in northern Pakistan tours.</p>
+                </div>
+                <div class="team-card">
+                    <span class="avatar" aria-hidden="true">BA</span>
+                    <h3>Bilal Ahmed</h3>
+                    <span class="team-role">Booking Coordinator</span>
+                    <p>Booking coordinator and customer support lead.</p>
+                </div>
+            </div>
+            <p class="agency-note">KungFu Travels is an agency owned and run by <strong>Noor Fatimah</strong>.</p>
+        </section>
+
+        <p class="page-actions"><a class="btn" href="about.html">Return to About</a></p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2 class="footer-title">Contact us</h2>
+                <ul>
+                    <li><a href="mailto:info@kungfutravels.com">&#9993; info@kungfutravels.com</a></li>
+                    <li><a href="tel:+923123456780">&#9742; +92 312 3456780</a></li>
+                    <li><span>&#128339; Mon to Sat, 9:00 AM to 6:00 PM</span></li>
+                </ul>
+            </div>
+            <p class="footer-bottom">Fictional coursework website. Built by Noor Fatimah.</p>
+        </div>
+    </footer>
+    <script src="../js/dropdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | KungFu Travels</title>
+    <link rel="stylesheet" href="../styles/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header class="site-header">
+        <div class="container">
+            <p class="site-name">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="KungFu Travels logo" class="site-logo">
+                    KungFu Travels
+                </a>
+            </p>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-dropdown">
+                    <a href="destinations.html">Destinations</a>
+                    <button type="button" class="dropdown-toggle" aria-expanded="false" aria-label="Show destinations menu">&#9662;</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="destination-details.html">Hunza Valley</a></li>
+                        <li><a href="murree-hills.html">Murree Hills</a></li>
+                        <li><a href="naran.html">Naran</a></li>
+                    </ul>
+                </div>
+                <a href="booking.html">Booking</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="account-nav" aria-label="Account navigation">
+                <a href="login.html" aria-current="page">Login</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span aria-hidden="true"> / </span>
+        <span aria-current="page">Login</span>
+    </nav>
+
+    <main class="container page-content">
+        <article>
+            <h1>Login</h1>
+            <p>Enter your account details. </p>
+            <form class="form-card" action="#" method="post">
+                <p>
+                    <label for="login-email">Email address</label>
+                    <input type="email" id="login-email" name="email"
+                           autocomplete="email" required>
+                </p>
+                <p>
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password"
+                           autocomplete="current-password" minlength="8" required>
+                </p>
+                <p>
+                    <input type="checkbox" id="remember-me" name="remember">
+                    <label for="remember-me">Remember me on this device</label>
+                </p>
+                <button type="submit">Login</button>
+            </form>
+            <p>Do not have an account? <a href="register.html">Register here</a>.</p>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-contact">
+                <h2 class="footer-title">Contact us</h2>
+                <ul>
+                    <li><a href="mailto:info@kungfutravels.com">&#9993; info@kungfutravels.com</a></li>
+                    <li><a href="tel:+923123456780">&#9742; +92 312 3456780</a></li>
+                    <li><span>&#128339; Mon to Sat, 9:00 AM to 6:00 PM</span></li>
+                </ul>
+            </div>
+            <p class="footer-bottom">Fictional coursework website. Built by Noor Fatimah.</p>
+        </div>
+    </footer>
+      <script src="../js/dropdown.js"></script>
+      <script src="../js/password-toggle.js"></script>
+      <script src="../js/login.js"></script>
+</body>
+</html>
